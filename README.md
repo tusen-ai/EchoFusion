@@ -2,6 +2,14 @@
 
 This is the official implementation of [EchoFusion](https://arxiv.org/abs/2307.16532).
 
+## Reannotated BBox Label for RADIal
+The reannotated bbox-level label is provided in the file radial_bbox_labels.csv. Each label contains the following information:
+- numSample: number of the current synchronized sample between all the sensors. That is to say, this label can be projected in each individual sensor with a common dataset_index value. Note that there might be more than one line with the same numSample, one line per label;
+- [radar_X_m, radar_Y_m, radar_Z_m]: Object geometric center of each label under radar coordinate system, with x-axis pointing to the front, y-axis pointing to the left, and z-axis pointing to the upright.
+- [dim_X_m, dim_Y_m, dim_Z_m]: Object size along each dimension.
+- rotation_y: Angle on the x-y plane. 0 deg is the positive x-axis.
+- class: 1 means vehicle, while -1 means no valid objects.
+
 ## Citation
 Please consider citing our work as follows if it is helpful.
 
