@@ -1,6 +1,19 @@
-## Echoes Beyond Points: Unleashing the Power of Raw Radar Data in Multi-modality Fusion
+# Echoes Beyond Points: Unleashing the Power of Raw Radar Data in Multi-modality Fusion
 
 This is the official implementation of [EchoFusion](https://arxiv.org/abs/2307.16532).
+
+## Abstract
+In this work, the authors present a novel method named EchoFusion
+to skip the existing radar signal processing pipeline and then incorporate the radar raw data with other sensors. Specifically, the EchoFusion first generate the Bird’s Eye View (BEV) queries and then take corresponding spectrum features from radar to fuse with other sensors. By this approach, the EchoFusion could utilize both rich
+and lossless distance and speed clues from radar echoes and rich semantic clues from images, making the method surpass all existing methods on the RADIal dataset, and approach the performance of LiDAR.
+
+## Methods
+![method](figs/pipeline.png "model arch")
+
+## Getting Started
+- [Installation](docs/install.md)
+- [Prepare Dataset](docs/prepare_dataset.md)
+- [Run and Eval](docs/getting_started.md)
 
 ## Reannotated BBox Label for RADIal
 The reannotated bbox-level label is provided in the file radial_bbox_labels.csv. Each label contains the following information:
@@ -27,3 +40,5 @@ This project is based on the following codebases.
 
 * [MMDetection3D](https://github.com/open-mmlab/mmdetection3d)
 * [PolarFormer](https://github.com/fudan-zvg/PolarFormer)
+* [RADIal](https://github.com/valeoai/RADIal/tree/main)
+* [KRadar](https://github.com/kaist-avelab/K-Radar/tree/main)
