@@ -1,4 +1,4 @@
-# Echoes Beyond Points: Unleashing the Power of Raw Radar Data in Multi-modality Fusion
+# [NIPS2023] Echoes Beyond Points: Unleashing the Power of Raw Radar Data in Multi-modality Fusion
 
 This is the official implementation of [EchoFusion](https://arxiv.org/abs/2307.16532).
 
